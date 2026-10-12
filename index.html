@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="theme-color" content="#070b20">
+<title>Carrera al Vacío</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main class="game-shell">
+  <header class="topbar">
+    <div class="brand"><span class="brand-icon">🚀</span><span>CARRERA AL VACÍO</span></div>
+    <div class="badges">
+      <span class="badge level" id="levelBadge">NIVEL 1</span>
+      <span class="badge points" id="pointsBadge">PUNTOS 0</span>
+      <span class="badge lives" id="livesBadge">VIDAS 3</span>
+    </div>
+  </header>
+  <div class="stage">
+    <canvas id="game" aria-label="Videojuego Carrera al Vacío"></canvas>
+    <div class="message" id="message">¡Prepárate, piloto! Pulsa ENTER o toca la pantalla.</div>
+    <div class="mobile-controls">
+      <button id="leftBtn" aria-label="Mover a la izquierda">‹</button>
+      <button id="rightBtn" aria-label="Mover a la derecha">›</button>
+    </div>
+    <div class="bottom-status">
+      <span id="shadowLabel">La sombra se acerca: 0%</span>
+      <div class="progress-track"><div id="shadowProgress"></div></div>
+    </div>
+  </div>
+  <footer><span>← → / A D MOVER</span><span>ESPACIO TURBO</span><span>E PULSO EMP</span><span>ENTER CONTINUAR</span></footer>
+</main>
+<script src="js/game.js"></script>
+</body>
+</html>
